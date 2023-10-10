@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #fff;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo{
+            font-size: 32px;
+            color: black;
+            text-decoration: none;
+            font-weight: 700;
+            cursor: default;
+        }
+
+        .navbar a{
+            position: relative;
+            font-size: 18px;
+            color: black;
+            font-weight: 500;
+            text-decoration: none;
+            margin-left: 40px;
+            cursor: pointer;
+        }   
+
+        .Learn {
+            background: orange;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+        }
+
+        .Learn:hover{
+            background: rgb(250, 121, 1);
+        }
+
+        .small-box {
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .small-box .title {
+            color: black;
+            font-weight: bold;
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .small-box .description {
+            color: black;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .small-box .button {
+            position: relative;
+            background-color: #ff0303;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 15px 50px;
+            margin-top: 10px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 600;
+            transition: .3s;
+            text-decoration: none;
+        }
+
+        .small-box .button:hover {
+            background-color: rgb(22, 5, 255);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Title</a>
+        <nav class="navbar">
+            <a href="#" class="Home" style="color: red;">Home</a>
+            <a href="#" class="AboutUs">About Us</a>
+            <a href="index2.html" class="Learn">Learn More</a>
+        </nav>
+    </header>
+
+    <div class="small-box">
+        <div class="title">TOPIC ARTICLE</div>
+        <div class="description">DESCRIPTION</div>
+        
+        <a href="index2.html" class="button">Learn More</a>
+    </div>
+</body>
+</html>
